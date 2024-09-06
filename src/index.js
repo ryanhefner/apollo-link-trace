@@ -11,8 +11,8 @@ export class TraceContextLink extends ApolloLink {
   }
 
   request(operation, forward) {
-    const traceId = uuidv4()
-    const spanId = uuidv4()
+    const traceId = uuidv4().replace(/-/g, '').toLowerCase()
+    const spanId = uuidv4().split('-')[0].toLowerCase()
 
     operation.setContext(({ headers = {} }) => ({
       headers: {
