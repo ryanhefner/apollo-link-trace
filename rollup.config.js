@@ -11,11 +11,14 @@ const config = {
     name: pkg.name,
     file: './index.js',
     format: 'umd',
-    globals: {},
+    exports: 'named',
+    globals: {
+      '@apollo/client': 'ApolloClient',
+    },
     banner: `/*! [banner info] !*/`,
     footer: '/* [footer info] */',
   },
-  external: [],
+  external: ['@apollo/client'],
   plugins: [
     babel({
       exclude: 'node_modules/**',
