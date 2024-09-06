@@ -40,6 +40,9 @@
   "peerDependencies": {
     "@apollo/client": "^3.0.0"
   },
+  "dependencies": {
+    "uuid": "^10.0.0"
+  },
   "devDependencies": {
     "@apollo/client": "^3.11.8",
     "@babel/cli": "^7.12.10",
@@ -74,8 +77,5 @@
     "typescript": "^5.3.3",
     "vitest": "^2.0.4"
   },
-  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447",
-  "dependencies": {
-    "uuid": "^10.0.0"
-  }
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
