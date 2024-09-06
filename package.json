@@ -2,6 +2,14 @@
   "name": "apollo-link-trace",
   "version": "0.1.4",
   "description": "Apply Trace Context headers to your Apollo Client requests",
+  "keywords": [
+    "apollo",
+    "apollo-link",
+    "trace",
+    "trace-context",
+    "opentelemetry",
+    "distributed-tracing"
+  ],
   "repository": {
     "type": "git",
     "url": "ryanhefner/apollo-link-trace"
