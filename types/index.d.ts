@@ -9,6 +9,10 @@ import {
 export declare namespace TraceContextLink {
   export interface Options {
     tracestate?: string
+    tracestateCallback?: (traceparentValues: {
+      traceId: string
+      spanId: string
+    }) => string
   }
 }
 
