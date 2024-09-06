@@ -35,9 +35,6 @@ yarn add apollo-link-trace
 import { ApolloClient, HttpLink, InMemoryCache, from } from '@apollo/client'
 import { TraceContextLink } from 'apollo-link-trace'
 
-const space = process.env.CONTENTFUL_SPACE
-const accessToken = process.env.CONTENTFUL_ACCESS_TOKEN
-
 const apolloClient = new ApolloClient({
   link: from([
     new TraceContextLink(),
