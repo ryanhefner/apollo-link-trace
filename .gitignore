@@ -5,7 +5,7 @@ node_modules
 coverage
 es
 umd
-/*.js
+/*.cjs
 
 # Include Rollup config
 !rollup.config.js
