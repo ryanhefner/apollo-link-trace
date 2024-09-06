@@ -15,8 +15,8 @@ const config = {
     globals: {
       '@apollo/client': 'ApolloClient',
     },
-    banner: `/*! [banner info] !*/`,
-    footer: '/* [footer info] */',
+    banner: `/*! ${pkg.name} !*/`,
+    footer: `/* Copyright ${new Date().getFullYear()} - ${pkg.author} */`,
   },
   external: ['@apollo/client'],
   plugins: [
