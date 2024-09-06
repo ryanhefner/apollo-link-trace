@@ -15,7 +15,7 @@ export declare namespace TraceContextLink {
 export declare class TraceContextLink extends ApolloLink {
   private readonly tracestate?: string
 
-  constructor(options: TraceContextLink.Options)
+  constructor(options?: TraceContextLink.Options)
 
   request(
     operation: Operation,
